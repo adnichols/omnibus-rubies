@@ -31,5 +31,5 @@ build do
   # of UTF-8. This is required to workaround a bug in rubygems 2.0.3. See this
   # commit fixing the issue (but unreleased of this writing):
   # https://github.com/rubygems/rubygems/commit/9fb90c0ed091346e148c925df2d15713ab51fda1
-  ruby "setup.rb --no-rdoc --no-ri --backtrace --debug", :env => {"LC_ALL" => "en_US.UTF-8"}
+  command "#{install_dir}/bin/ruby setup.rb --no-rdoc --no-ri --backtrace --debug", :env => {"LC_ALL" => "en_US.UTF-8"}
 end

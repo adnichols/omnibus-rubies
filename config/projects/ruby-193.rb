@@ -1,17 +1,17 @@
-name "ruby-210"
-maintainer "Chef"
-homepage "getchef.com"
+name "ruby-193"
+maintainer "Anichols"
+homepage "github.com/adnichols/omnibus-rubies"
 
-replaces        "ruby-210"
-install_path    "/opt/ruby-210"
+replaces        "ruby-193"
+install_path    "/opt/ruby-193"
 build_version   Omnibus::BuildVersion.new.semver
 build_iteration 1
 
 # creates required build directories
 dependency "preparation"
 
-dependency "ruby-210"
-# ruby 2.0 comes with rubygems 2.2
+dependency "ruby-193"
+dependency "rubygems-20"
 
 # version manifest file
 dependency "version-manifest"

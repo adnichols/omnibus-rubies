@@ -27,5 +27,5 @@ source :url => "http://production.cf.rubygems.org/rubygems/rubygems-#{version}.t
 relative_path "rubygems-#{version}"
 
 build do
-  ruby "setup.rb --no-rdoc --no-ri"
+  command "#{install_dir}/bin/ruby setup.rb --no-rdoc --no-ri"
 end
